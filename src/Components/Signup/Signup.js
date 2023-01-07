@@ -8,7 +8,7 @@ import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 import swal from 'sweetalert';
 
-import  { Redirect,Link } from 'react-router-dom'
+import  { Navigate,Link } from 'react-router-dom'
 
 class Signup extends Component {
 
@@ -49,7 +49,7 @@ class Signup extends Component {
                         } 
                     })
                     .then((value) => {
-                        return <Redirect to='/login'  />
+                        return <Navigate to='/login'  />
                           
                      
                       });
